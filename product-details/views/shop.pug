@@ -1,4 +1,7 @@
 extends main-layout.pug    
 block content
-    main                   
-        h1 welcome to mypage
+    div 
+          h1 List Of Products Added
+            ul 
+              each product in prods
+                li=product.title
